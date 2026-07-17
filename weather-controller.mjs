@@ -8,8 +8,6 @@ app.use(express.json())
 
 const API_KEY = process.env.API_KEY;
 const PORT = process.env.PORT;
-const RESPONSE_404 = {"Error": "Not found"}
-const RESPONSE_400 = {"Error": "Invalid request"}
 
 app.listen(PORT, async () => {
     console.log(`Server listening on port ${PORT}...`);
