@@ -1,2 +1,11 @@
-### Weather for Rock Creek Lake Inyo County
-GET http://localhost:3000/current-weather?LAT=37.452487&LONG=-118.737187 HTTP/1.1
+### HTTP Requests
+
+### Set values for LAT and LONG
+@LAT = 37.3614
+@LON = -118.7366
+
+### Current Weather
+GET http://localhost:3000/current-weather?lat={{LAT}}&lon={{LON}} HTTP/1.1
+
+### 5 Day Forecast
+GET http://localhost:3000/forecast-weather?lat={{LAT}}&lon={{LON}} HTTP/1.1
