@@ -1,0 +1,1 @@
+GET http://localhost:3000/current-weather?LAT=37.452487&LONG=-118.737187 HTTP/1.1
