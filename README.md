@@ -6,12 +6,12 @@ A few steps are needed before you run the server locally.
 
 First, create a .env file in the main folder. In this file include:
 API="YOUR API KEY FROM OPEN WEATHER"
-PORT=3000 // Or another applicable port to run the server on
+PORT=3000 // Or another applicable port to run the express server on
 
 Then, make sure you have npm installed on your system.
 You can test this with 'npm --version' in your terminal.
 
-Next, enter 'npm install' in your terminal
+Next, enter 'npm install' in your terminal.
 
 Finally, enter 'npm start' to run the server.
 
