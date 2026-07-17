@@ -1,7 +1,7 @@
 # weather-microservice
 A microservice to generate weather data for the Commit Crew.
 
-# Set-up
+## Set-up
 A few steps are needed before you run the server locally.
 
 First, create a .env file in the main folder. In this file include:
