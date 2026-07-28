@@ -79,6 +79,13 @@ app.get('/forecast-weather', asyncHandler ( async(req, res) => {
         const result = await response.json();
         console.log(result);
 
+        for (const dayForecast of result['list']) {
+            delete dayForecast['dt'];
+            delete dayForecast['sys'];
+            delete dayForecast['dt_txt'];
+            delete dayForecast['pop'];
+        } 
+
         // Modify json
         delete result['dt'];
         delete result['sys'];
