@@ -4,8 +4,10 @@
 @LAT = 37.3614
 @LON = -118.7366
 
+@PORT = 3000
+
 ### Current Weather
-GET http://localhost:3000/current-weather?lat={{LAT}}&lon={{LON}} HTTP/1.1
+GET http://localhost:{{PORT}}/current-weather?lat={{LAT}}&lon={{LON}} HTTP/1.1
 
 ### 5 Day Forecast
-GET http://localhost:3000/forecast-weather?lat={{LAT}}&lon={{LON}} HTTP/1.1
+GET http://localhost:{{PORT}}/forecast-weather?lat={{LAT}}&lon={{LON}} HTTP/1.1

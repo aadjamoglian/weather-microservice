@@ -39,6 +39,10 @@ app.get('/current-weather', asyncHandler ( async(req, res) => {
         const result = await response.json();
         console.log(result);
 
+        // Modify json
+        delete result['dt'];
+        delete result['sys'];
+
         // Send result as response
         res.status(200).type('application/json').send(result)
 
@@ -74,6 +78,10 @@ app.get('/forecast-weather', asyncHandler ( async(req, res) => {
         // Save json response
         const result = await response.json();
         console.log(result);
+
+        // Modify json
+        delete result['dt'];
+        delete result['sys'];
 
         // Send result as response
         res.status(200).type('application/json').send(result)
