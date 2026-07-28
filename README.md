@@ -25,9 +25,9 @@ Hope this helps!
 There are two types of **GET** requests that can be made to the service:
 
 ### 1 - Current Weather
-  PORT = port referenced in the env file
-  LAT = the latitude of the coordinates you want current weather for
-  LON = the longitude of the coordinates you want current weather for
+  PORT = port referenced in the env file__
+  LAT = the latitude of the coordinates you want current weather for__
+  LON = the longitude of the coordinates you want current weather for__
 
   Call Structure in HTTP
   GET http://localhost:{{**PORT**}}/current-weather?lat={{**LAT**}}&lon={{**LON**}} HTTP/1.1
