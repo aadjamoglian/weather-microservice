@@ -26,6 +26,7 @@ There are two types of **GET** requests that can be made to the service:
 
 ### 1 - Current Weather
   PORT = port referenced in the env file
+  
   LAT = the latitude of the coordinates you want current weather for
   LON = the longitude of the coordinates you want current weather for
 
