@@ -140,6 +140,8 @@ The response will be returned in the following JSON format:
   [...],
 }
 
+## UML Sequence Diagram
+
   
 
 
