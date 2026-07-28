@@ -12,7 +12,7 @@ PORT=3000 // Or another applicable port to run the express server on
 
 Then, make sure you have npm installed on your system.
 
-Next, enter 'npm install' in your terminal.
+Next, navigate to your project directory and enter 'npm install' in your terminal.
 
 Finally, enter 'npm start' to run the server.
 
