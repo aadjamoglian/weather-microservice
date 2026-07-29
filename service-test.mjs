@@ -36,7 +36,7 @@ async function run() {
     return runForecast({ lat, lon })
   }
   if (args.values.sentiment) {
-    return runForecast({ lat, lon })
+    return runSentiment({ lat, lon })
   }
 
 }
