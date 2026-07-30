@@ -141,7 +141,7 @@ The response will be returned in the following JSON format:
 }
 
 ## UML Sequence Diagram
-
+<img width="1969" height="3126" alt="Drawing 4" src="https://github.com/user-attachments/assets/30ccadf2-ee6f-428a-bee6-9026511648f1" />
   
 
 
