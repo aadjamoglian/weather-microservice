@@ -57,10 +57,10 @@ There are three types of **GET** requests that can be made to the service:
   LON = the longitude of the coordinates you want  weather sentiment for
 
   Call Structure in HTTP
-  GET http://localhost:{{**PORT**}}/current-weather?lat={{**LAT**}}&lon={{**LON**}} HTTP/1.1
+  GET http://localhost:{{**PORT**}}/sentiment-weather?lat={{**LAT**}}&lon={{**LON**}} HTTP/1.1
 
   Example Call:
-  GET http://localhost:3000/current-weather?lat=37.3635&lon=118.3951 HTTP/1.1
+  GET http://localhost:3000/sentiment-weather?lat=37.3635&lon=118.3951 HTTP/1.1
 
 
 ## How To Receive Data
