@@ -1,5 +1,6 @@
 # weather-microservice
-A microservice to generate current weather and 5 day forecast data. The microservice utilizes a rest api through express.
+A microservice to generate current weather, 5 day forecast, and weather sentiment data. The microservice utilizes a REST api through express.
+
 A user/application sends a request with latitude and longitude and the current weather or 5 day forecast is sent as a response
 depending on the call structure.
 
@@ -9,6 +10,8 @@ A few steps are needed before you run the server locally.
 First, create a .env file in the main folder. In this file include:
 API="YOUR API KEY FROM OPEN WEATHER"
 PORT=3000 // Or another applicable port to run the express server on
+
+You may rename sample.env to .env and fill in with your own values to get you started.
 
 Then, make sure you have npm installed on your system.
 
@@ -22,7 +25,7 @@ Hope this helps!
 
 ## How To Request Data
 
-There are two types of **GET** requests that can be made to the service:
+There are three types of **GET** requests that can be made to the service:
 
 ### 1 - Current Weather
   PORT = port referenced in the env file
@@ -46,9 +49,23 @@ There are two types of **GET** requests that can be made to the service:
   Example Call:
   GET http://localhost:3000/forecast-weather?lat=37.3635&lon=118.3951 HTTP/1.1
 
+### 3 - Weather Sentiment
+  Gets relative human readable temperature and precipitation sentiment (e.g. "temperate" temperature and "light" rain)
+
+  PORT = port referenced in the env file
+  LAT = the latitude of the coordinates you want weather sentiment for
+  LON = the longitude of the coordinates you want  weather sentiment for
+
+  Call Structure in HTTP
+  GET http://localhost:{{**PORT**}}/current-weather?lat={{**LAT**}}&lon={{**LON**}} HTTP/1.1
+
+  Example Call:
+  GET http://localhost:3000/current-weather?lat=37.3635&lon=118.3951 HTTP/1.1
+
+
 ## How To Receive Data
 
-These are the two responses expected from the **GET** requests above.
+These are the three responses expected from the **GET** requests above.
 
 ### 1 - Current Weather
 
@@ -140,7 +157,22 @@ The response will be returned in the following JSON format:
   [...],
 }
 
+### 1 - Current Weather
+
+The response will be returned in the following JSON format:
+
+{
+  "temperature": "temperate",
+  "precipitation": "heavy"
+}
+
+Temperatures are one of 'cold', 'temperate', and 'hot'
+Precipitation values are one of 'none', 'light', 'moderate', and 'heavy'
+
 ## UML Sequence Diagram
+<img width="2385" height="4491" alt="Weather Microservice UML Diagram" src="https://github.com/user-attachments/assets/77b80473-9e84-4d38-963d-48249bdc8095" />
+
+
 
   
 
