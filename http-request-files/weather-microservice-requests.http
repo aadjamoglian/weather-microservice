@@ -11,3 +11,6 @@ GET http://localhost:{{PORT}}/current-weather?lat={{LAT}}&lon={{LON}} HTTP/1.1
 
 ### 5 Day Forecast
 GET http://localhost:{{PORT}}/forecast-weather?lat={{LAT}}&lon={{LON}} HTTP/1.1
+
+### Weather Sentiment
+GET http://localhost:{{PORT}}/sentiment-weather?lat={{LAT}}&lon={{LON}} HTTP/1.1
