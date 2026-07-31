@@ -170,7 +170,8 @@ Temperatures are one of 'cold', 'temperate', and 'hot'
 Precipitation values are one of 'none', 'light', 'moderate', and 'heavy'
 
 ## UML Sequence Diagram
-<img width="2385" height="4491" alt="Weather Microservice UML Diagram" src="https://github.com/user-attachments/assets/3dfa65e0-e843-4e89-be67-9abe99620844" />
+<img width="2385" height="4491" alt="Weather Microservice UML Diagram" src="https://github.com/user-attachments/assets/77b80473-9e84-4d38-963d-48249bdc8095" />
+
 
 
   
