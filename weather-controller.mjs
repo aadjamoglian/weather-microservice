@@ -22,7 +22,6 @@ app.get('/current-weather', asyncHandler ( async(req, res) => {
 
     try {
         const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
-        console.log(url)
 
         // Call Open Weather API for weather given lat and long
         const response = await fetch(url, {
@@ -37,11 +36,11 @@ app.get('/current-weather', asyncHandler ( async(req, res) => {
 
         // Save json response
         const result = await response.json();
-        console.log(result);
 
         // Modify json
         delete result['dt'];
         delete result['sys'];
+        console.log(result)
 
         // Send result as response
         res.status(200).type('application/json').send(result)
@@ -77,7 +76,6 @@ app.get('/forecast-weather', asyncHandler ( async(req, res) => {
 
         // Save json response
         const result = await response.json();
-        console.log(result);
 
         for (const dayForecast of result['list']) {
             delete dayForecast['dt'];
@@ -86,9 +84,7 @@ app.get('/forecast-weather', asyncHandler ( async(req, res) => {
             delete dayForecast['pop'];
         } 
 
-        // Modify json
-        delete result['dt'];
-        delete result['sys'];
+        console.log(result);
 
         // Send result as response
         res.status(200).type('application/json').send(result)
