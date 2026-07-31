@@ -157,7 +157,7 @@ The response will be returned in the following JSON format:
   [...],
 }
 
-### 1 - Current Weather
+### 1 - Weather Sentiment
 
 The response will be returned in the following JSON format:
 
