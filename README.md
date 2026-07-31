@@ -141,6 +141,8 @@ The response will be returned in the following JSON format:
 }
 
 ## UML Sequence Diagram
+<img width="2385" height="4491" alt="Weather Microservice UML Diagram" src="https://github.com/user-attachments/assets/3dfa65e0-e843-4e89-be67-9abe99620844" />
+
 
   
 
